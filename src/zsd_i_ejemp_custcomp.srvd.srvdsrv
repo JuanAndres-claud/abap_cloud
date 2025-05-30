@@ -1,0 +1,4 @@
+@EndUserText.label: 'Ejemplo Service Definicition'
+define service ZSD_I_EJEMP_CUSTCOMP {
+  expose ZCDS_I_EJEMP_CUSTCOMP;
+}

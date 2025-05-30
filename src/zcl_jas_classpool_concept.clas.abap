@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_jas_classpool_concept IMPLEMENTATION.
+CLASS ZCL_JAS_CLASSPOOL_CONCEPT IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
    "llama metodo reachtojupiter y llena la tabla itab.
@@ -28,6 +29,7 @@ CLASS zcl_jas_classpool_concept IMPLEMENTATION.
 *            output =
         ).
   ENDMETHOD.
+
 
   METHOD reachtojupiter.
      DATA: lv_str TYPE string.
@@ -56,5 +58,4 @@ CLASS zcl_jas_classpool_concept IMPLEMENTATION.
       lo_jupiter->land_orbit( IMPORTING rvalue = lv_str ).
       APPEND lv_str TO itab.
   ENDMETHOD.
-
 ENDCLASS.
